@@ -25,7 +25,7 @@ const Serviecs = () => {
                 </div>
             </div>
             <div className='text-center mt-20 w-1/2 mx-auto'>
-                <h2 className='text-NeutralBlack text-3xl md:text-4xl font-semibold mb-2 leading-8 py-4'>Manage your entire community in a single system</h2>
+                <h2 className='text-NeutralBlack text-2xl md:text-4xl font-semibold mb-2 leading-8 py-4'>Manage your entire community in a single system</h2>
                 <p className='text-neutralGrey'>Who is Nextcent suitable for?</p>
             </div>
             <div className='mt-14 mx-auto grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:w-11/12 gap-12'>
