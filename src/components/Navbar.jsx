@@ -22,15 +22,15 @@ const Navbar = () => {
     // navItems array
     const navItems = [
         { link: "Home", path: "home" },
-        { link: "Features", path: "features" },
-        { link: "Community", path: "community" },
-        { link: "Blog", path: "blog" },
-        { link: "Pricing", path: "pricing" },
-
+        { link: "Services", path: "services" },
+        { link: "About", path: "about" },
+        { link: "Product", path: "product" },
+        { link: "Testimonial", path: "testimonial" },
+        { link: "FAQ", path: "faq" }
     ]
     return (
         <header className='w-full bg-neutralWhite fixed top-0 left-0 right-0'>
-            <nav className={`py-4 ${isSticky ? "top-0 left-0 border-b bg-neutralWhite" : ""}`}>
+            <nav className={`py-4 ${isSticky ? "top-0 left-0 right-0 border-b bg-neutralWhite" : ""}`}>
                 <div className='flex justify-between items-center gap-8'>
                     <a href="/"
                         className='text-2xl font-semibold flex space-x-3' >
@@ -67,7 +67,7 @@ const Navbar = () => {
                     </div>
                 </div>
                 {/* nav items for mobile screen */}
-                <div className={`space-y-5 flex flex-col mt-5 bg-brandPrimary ${isMenuOpen ? "block fixed top-5 left-0 right-0 " : "hidden"}`}>
+                <div className={`space-y-5 flex flex-col mt-10 bg-brandPrimary rounded ${isMenuOpen ? "block fixed top-5 left-0 right-0 " : "hidden"}`}>
                     {navItems.map(({ link, path }) =>
                         <Link to={path} key={path} spy={true} offset={-100} smooth={true} className='text-neutralWhite hover:text-NeutralDGrey cursor-pointer ' >{link}</Link>)}
                 </div>
