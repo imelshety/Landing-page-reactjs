@@ -11,3 +11,4 @@ Currently, two official plugins are available:
 
 - i import svg from (heroIcons and icons in figma)
 - i import react-scroll for smoith scrolling.
+- i import flowbite-react
