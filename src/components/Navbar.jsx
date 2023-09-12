@@ -30,7 +30,7 @@ const Navbar = () => {
     ]
     return (
         <header className='w-full bg-neutralWhite fixed top-0 left-0 right-0'>
-            <nav className={`py-8{isSticky ? "top-0 left-0 border-b bg-neutralWhite" : ""}`}>
+            <nav className={`py-4 ${isSticky ? "top-0 left-0 border-b bg-neutralWhite" : ""}`}>
                 <div className='flex justify-between items-center gap-8'>
                     <a href="/"
                         className='text-2xl font-semibold flex space-x-3' >
@@ -44,10 +44,12 @@ const Navbar = () => {
                             <Link to={path} key={path} spy={true} offset={-100} smooth={true} className='text-NeutralDGrey hover:text-brandPrimary cursor-pointer' >{link}</Link>)}
                     </ul>
                     {/* btn for large screen */}
-                    <div className='space-x-12 hidden md:flex items-center mt-2 mr-2'>
-                        <button className='w-1/7 text-neutralWhite bg-brandPrimary text-md p-1 rounded flex justify-center items-center lg:p-3 lg:w-1/9 lg:text-xl'>
-                            <span>Register Now</span>
-                            <img src={arrow} alt="arrow" className='w-4 h-4 lg:ml-4' />
+                    <div className='space-x-4 hidden md:flex items-center mt-2'>
+                        <button className=' text-NeutralDGrey border-2 bg-neutralWhite text-md p-1 rounded flex justify-center items-center lg:p-3 lg:text-xl transition hover:bg-brandPrimary hover:text-neutralWhite'>
+                            <span>Login</span>
+                        </button>
+                        <button className=' text-neutralWhite border-2 bg-brandPrimary text-md p-1 rounded flex justify-center items-center lg:p-3 lg:text-xl  transition hover:bg-neutralWhite hover:text-brandPrimary '>
+                            <span>SignUp</span>
                         </button>
                     </div>
                     {/* show brn in  mobile device  */}
