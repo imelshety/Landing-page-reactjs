@@ -32,7 +32,7 @@ const Navbar = () => {
         <header className='w-full bg-neutralWhite fixed top-0 left-0 right-0'>
             <nav className={`py-4 ${isSticky ? "top-0 left-0 right-0 border-b bg-neutralWhite" : ""}`}>
                 <div className='flex justify-between items-center gap-8'>
-                    <a href="/"
+                    <a href="home"
                         className='text-2xl font-semibold flex space-x-3' >
                         <img src={logo} alt="Logo" className='w-10 inline-block' />
                         <span className='text-BrandSecondary'>NEXCENT</span>

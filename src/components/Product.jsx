@@ -1,14 +1,27 @@
 import React from 'react'
-
+// import Motion
+import { motion } from 'framer-motion'
+// import variants
+import { fadeIn } from '../variants'
 const Product = () => {
     return (
         <div id='product'>
             <div className='max-w-screen-2xl px-4 lg:px-14 mx-auto my-8 flex flex-col md:flex-row items-center justify-center'>
                 <div className='md:w-11/12 flex flex-col justify-center items-center md:flex-row gap-12'>
-                    <div>
+                    <motion.div
+                        variants={fadeIn("right", 0.2)}
+                        initial="hidden"
+                        whileInView={"show"}
+                        viewport={{ once: false, amount: 0.7 }}
+                    >
                         <img src="/src/assets/product1.png" alt="about-image" />
-                    </div>
-                    <div className='md:w-3/5 mx-auto'>
+                    </motion.div>
+                    <motion.div
+                        variants={fadeIn("left", 0.2)}
+                        initial="hidden"
+                        whileInView={"show"}
+                        viewport={{ once: false, amount: 0.7 }}
+                        className='md:w-3/5 mx-auto'>
                         <h2 className='text-4xl font-semibold text-NeutralDGrey mb-4 md:w-4/5'>How to design your site footer like we did</h2>
                         <p className='md:w-3/4 text-sm text-neutralGrey mb-8'>Donec a eros justo.
                             Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna.
@@ -17,14 +30,25 @@ const Product = () => {
                             Praesent felis est, finibus et nisi ac,
                             hendrerit venenatis libero. Donec consectetur faucibus ipsum id gravida.</p>
                         <button className='btn-primary'>Learn More</button>
-                    </div>
+                        {/*  */}
+                    </motion.div>
                 </div>
             </div>
             <div className='bg-neutralSilver py-16 max-w-screen-2xl px-4 lg:px-14 mx-auto my-8 flex flex-col md:flex-row justify-around'>
-                <div className='md:w-1/2 mx-auto mb-8'>
+                <motion.div
+                    variants={fadeIn("right", 0.2)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.7 }}
+                    className='md:w-1/2 mx-auto mb-8'>
                     <img src="/src/assets/product2.png" alt="product2" className='' />
-                </div>
-                <div className='flex flex-col justify-center items-start md:w-1/2'>
+                </motion.div>
+                <motion.div
+                    variants={fadeIn("left", 0.2)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.7 }}
+                    className='flex flex-col justify-center items-start md:w-1/2'>
                     <p className=' text-sm text-neutralGrey leading-7 mb-8'>Maecenas dignissim justo eget nulla rutrum molestie.
                         Maecenas lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare,
                         tristique quam in, gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie,
@@ -53,9 +77,10 @@ const Product = () => {
                     </div>
 
 
-                </div>
+                    {/*  */}
+                </motion.div>
             </div>
-        </div>
+        </div >
     )
 }
 

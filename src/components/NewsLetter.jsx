@@ -3,9 +3,9 @@ import React from 'react'
 const NewsLetter = () => {
     return (
         <div className='px-4 lg:px-14 max-w-screen-2xl mx-auto bg-neutralSilver py-16'>
-            <div>
+            <dev>
                 <h1 className='text-3xl md:text-4xl lg:text-5xl text-[#263238] font-semibold text-center mb-4 lg:leading-snug'>Pellentesque suscipit fringilla libero eu.</h1>
-            </div>
+            </dev>
             <div>
                 <button className=' bg-brandPrimary text-neutralWhite py-5 px-5 mt-8 mx-auto flex rounded transition-all duration-300 hover:translate-y-3'>
                     Read More

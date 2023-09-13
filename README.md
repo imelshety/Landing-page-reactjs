@@ -13,3 +13,4 @@ Currently, two official plugins are available:
 - i import react-scroll for smoith scrolling.
 - i import flowbite-react
 - [figma Design ] (<https://www.figma.com/file/vIzvYUpumnVVtKZQwr6i0P/Responsive-Landing-Page-Design-%7C-Agency-Website?type=design&node-id=0%3A1&mode=dev>)
+- i import framer-motion library

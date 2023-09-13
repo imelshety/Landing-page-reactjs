@@ -1,5 +1,8 @@
 import React from 'react'
-
+// import Motion
+import { motion } from 'framer-motion'
+// import variants
+import { fadeIn } from '../variants'
 const Testimonial = () => {
     const blogs = [
         { id: 1, title: 'Creating Streamlined Safeguarding Processes with OneRen', image: "/src/assets/blog1.png" },
@@ -9,13 +12,23 @@ const Testimonial = () => {
     ]
     return (
         <div className='max-w-screen-2xl mx-auto px-4 lg:px-14 my-12 pb-12' id='testimonial'>
-            <div className='flex flex-col justify-center items-center'>
+            <motion.div
+                variants={fadeIn("left", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.7 }}
+                className='flex flex-col justify-center items-center'>
                 <h2 className='text-NeutralDGrey text-3xl md:text-5xl font-semibold text-center mb-8'>Caring is the new marketing</h2>
                 <p className='text-neutralGrey text-sm text-center leading-8 md:w-1/2'>The Nexcent blog is the best place to read about the latest membership insights, trends and more.
                     See whos joining the community, read about how our community are increasing their membership income and lots.</p>
-            </div>
+            </motion.div>
 
-            <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center justify-between'>
+            <motion.div
+                variants={fadeIn("down", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.7 }}
+                className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center justify-between mt-12'>
                 {blogs.map((blog) =>
                     <div key={blog.id} className='mx-auto mb-12 relative cursor-pointer'>
                         <img src={blog.image} alt={blog.id} className='hover:scale-95 transition-all duration-300' />
@@ -31,17 +44,8 @@ const Testimonial = () => {
                             </button></div>
                     </div>
                 )}
-            </div>
-            {/* <div className='w-11/12 mx-auto px-4 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-12 '>
-                <div style={{ backgroundImage: `url('/src/assets/blog1.png')` }} className='w-92 h-72 bg-cover relative'>
-                    <div className='w-1/2 h-1/2  bg-neutralSilver rounded absolute -bottom-10 left-16 shadow-2xl'>
-                        <h4 className='text-NeutralDGrey px-5'>Creating Streamlined Safeguarding Processes with OneRen</h4>
-                    </div>
-                </div>
-                <div style={{ backgroundImage: `url('/src/assets/blog2.png')` }} className='w-92 h-72 bg-cover'></div>
-                <div style={{ backgroundImage: `url('/src/assets/blog3.png')` }} className='w-92 h-72 bg-cover'></div>
-            </div> */}
-        </div>
+            </motion.div>
+        </div >
     )
 }
 

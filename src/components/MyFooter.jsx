@@ -2,13 +2,22 @@ import React from 'react'
 import { Footer } from 'flowbite-react';
 import { BsFacebook, BsGithub, BsInstagram, BsTwitter } from 'react-icons/bs';
 import logo from '../assets/logo.svg';
+// import Motion
+import { motion } from 'framer-motion'
+// import variants
+import { fadeIn } from '../variants'
 
 const MyFooter = () => {
     return (
         <Footer container id='footer' className='bg-[#263238]'>
             <div className="w-full mx-auto">
                 <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
-                    <div className='space-y-8 mb-8'>
+                    <motion.dev
+                        variants={fadeIn("right", 0.2)}
+                        initial="hidden"
+                        whileInView={"show"}
+                        viewport={{ once: false, amount: 0.7 }}
+                        className='space-y-8 mb-8 ml-5'>
                         <a href="/"
                             className='text-2xl font-semibold flex space-x-3' >
                             <img src={logo} alt="Logo" className='w-10 inline-block' />
@@ -43,11 +52,16 @@ const MyFooter = () => {
                                     className='text-neutralWhite hover:text-teal-300 transition-all duration-300'
 
                                 />
-
                             </div>
                         </div>
-                    </div>
-                    <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
+
+                    </motion.dev>
+                    <motion.dev
+                        variants={fadeIn("left", 0.2)}
+                        initial="hidden"
+                        whileInView={"show"}
+                        viewport={{ once: false, amount: 0.7 }}
+                        className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
                         <div>
                             <Footer.Title title="Company" className='text-neutralWhite' />
                             <Footer.LinkGroup col>
@@ -92,7 +106,8 @@ const MyFooter = () => {
                             <Footer.Title title="Stay up to date" className='text-neutralWhite' />
                             <input type="email" required className='w-64 h-10 rounded-xl' placeholder='Your Email address' />
                         </div>
-                    </div>
+                        {/*  */}
+                    </motion.dev>
                 </div>
 
             </div>
