@@ -1,3 +1,4 @@
+import About from "./components/About"
 import Home from "./components/Home"
 import Navbar from "./components/Navbar"
 import Serviecs from "./components/Serviecs"
@@ -8,6 +9,7 @@ const App = () => {
       <Navbar />
       <Home />
       <Serviecs />
+      <About />
     </>
   )
 }
