@@ -14,7 +14,7 @@ const Product = () => {
                         whileInView={"show"}
                         viewport={{ once: false, amount: 0.7 }}
                     >
-                        <img src="/src/assets/product1.png" alt="about-image" />
+                        <img src="/assets/product1.png" alt="about-image" />
                     </motion.div>
                     <motion.div
                         variants={fadeIn("left", 0.2)}
@@ -41,7 +41,7 @@ const Product = () => {
                     whileInView={"show"}
                     viewport={{ once: false, amount: 0.7 }}
                     className='md:w-1/2 mx-auto mb-8'>
-                    <img src="/src/assets/product2.png" alt="product2" className='' />
+                    <img src="/assets/product2.png" alt="product2" className='' />
                 </motion.div>
                 <motion.div
                     variants={fadeIn("left", 0.2)}
@@ -60,12 +60,12 @@ const Product = () => {
                     <p className='text-sm text-[#89939E] mb-8'>British Dragon Boat Racing Association</p>
 
                     <div className='space-y-8 space-x-8 flex flex-col md:flex-row justify-center items-center md:w-1/4 lg:w-11/12'>
-                        <img src="/src/assets/icon1product.svg" alt="1" className='ml-5 md:mt-8 md:ml-0' />
-                        <img src="/src/assets/icon2product.svg" alt="2" />
-                        <img src="/src/assets/icon3product.svg" alt="3" />
-                        <img src="/src/assets/icon4product.svg" alt="4" />
-                        <img src="/src/assets/icon5product.svg" alt="5" />
-                        <img src="/src/assets/icon6product.svg" alt="6" />
+                        <img src="/assets/icon1product.svg" alt="1" className='ml-5 md:mt-8 md:ml-0' />
+                        <img src="/assets/icon2product.svg" alt="2" />
+                        <img src="/assets/icon3product.svg" alt="3" />
+                        <img src="/assets/icon4product.svg" alt="4" />
+                        <img src="/assets/icon5product.svg" alt="5" />
+                        <img src="/assets/icon6product.svg" alt="6" />
                         <button className=' text-brandPrimary text-sm py-2 mt-8 flex rounded border hover:bg-brandPrimary hover:text-neutralWhite transition-all duration-300 hover:translate-y-3'>
                             Meet All Cutstomers
                             <span className='ml-3'>

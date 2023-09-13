@@ -1,5 +1,5 @@
 import { Carousel } from 'flowbite-react'
-import banner1 from '../assets/banner1.png'
+import banner1 from '/assets/banner1.png'
 import React from 'react'
 // import Motion
 import { motion } from 'framer-motion'

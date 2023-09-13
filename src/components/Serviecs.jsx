@@ -6,9 +6,9 @@ import { fadeIn } from '../variants'
 
 const Serviecs = () => {
     const cards = [
-        { id: 1, title: 'Membership Organisations', desc: 'Our membership management software provides full automation of membership renewals and payments', image: '/src/assets/service1.png' },
-        { id: 2, title: 'National Associations ', desc: 'Our membership management software provides full automation of membership renewals and payments', image: '/src/assets/service2.png' },
-        { id: 3, title: 'Membership Organisations', desc: 'Our membership management software provides full automation of membership renewals and payments', image: '/src/assets/service3.png' }
+        { id: 1, title: 'Membership Organisations', desc: 'Our membership management software provides full automation of membership renewals and payments', image: '/assets/service1.png' },
+        { id: 2, title: 'National Associations ', desc: 'Our membership management software provides full automation of membership renewals and payments', image: '/assets/service2.png' },
+        { id: 3, title: 'Membership Organisations', desc: 'Our membership management software provides full automation of membership renewals and payments', image: '/assets/service3.png' }
 
     ]
     return (
@@ -23,13 +23,13 @@ const Serviecs = () => {
                 <p className='text-neutralGrey'>We have been working with some Fortune 500+ clients</p>
                 {/* Our logos */}
                 <div className='my-12 flex justify-between'>
-                    <img src="/src/assets/logo-company/company1.png" alt="company-1" />
-                    <img src="/src/assets/logo-company/company2.png" alt="company-2" />
-                    <img src="/src/assets/logo-company/company3.png" alt="company-3" />
-                    <img src="/src/assets/logo-company/company4.png" alt="company-4" />
-                    <img src="/src/assets/logo-company/company5.png" alt="company-5" />
-                    <img src="/src/assets/logo-company/company6.png" alt="company-6" />
-                    <img src="/src/assets/logo-company/company7.png" alt="company-7" />
+                    <img src="/assets/logo-company/company1.png" alt="company-1" />
+                    <img src="/assets/logo-company/company2.png" alt="company-2" />
+                    <img src="/assets/logo-company/company3.png" alt="company-3" />
+                    <img src="/assets/logo-company/company4.png" alt="company-4" />
+                    <img src="/assets/logo-company/company5.png" alt="company-5" />
+                    <img src="/assets/logo-company/company6.png" alt="company-6" />
+                    <img src="/assets/logo-company/company7.png" alt="company-7" />
 
                 </div>
             </motion.div>

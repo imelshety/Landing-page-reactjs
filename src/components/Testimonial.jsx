@@ -5,9 +5,9 @@ import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
 const Testimonial = () => {
     const blogs = [
-        { id: 1, title: 'Creating Streamlined Safeguarding Processes with OneRen', image: "/src/assets/blog1.png" },
-        { id: 2, title: 'What are your safeguarding responsibilities and how can you manage them?', image: "/src/assets/blog2.png" },
-        { id: 3, title: 'Revamping the Membership Model with Triathlon Australia', image: "/src/assets/blog3.png" }
+        { id: 1, title: 'Creating Streamlined Safeguarding Processes with OneRen', image: "/assets/blog1.png" },
+        { id: 2, title: 'What are your safeguarding responsibilities and how can you manage them?', image: "/assets/blog2.png" },
+        { id: 3, title: 'Revamping the Membership Model with Triathlon Australia', image: "/assets/blog3.png" }
 
     ]
     return (

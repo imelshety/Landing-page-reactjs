@@ -1,7 +1,7 @@
 import React from 'react'
 import { Footer } from 'flowbite-react';
 import { BsFacebook, BsGithub, BsInstagram, BsTwitter } from 'react-icons/bs';
-import logo from '../assets/logo.svg';
+import logo from '/assets/logo.svg';
 // import Motion
 import { motion } from 'framer-motion'
 // import variants
@@ -10,7 +10,7 @@ import { fadeIn } from '../variants'
 const MyFooter = () => {
     return (
         <Footer container id='footer' className='bg-[#263238]'>
-            <div className="w-full mx-auto">
+            <div className="max-w-screen-2xl mx-auto">
                 <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
                     <motion.dev
                         variants={fadeIn("right", 0.2)}
@@ -106,7 +106,6 @@ const MyFooter = () => {
                             <Footer.Title title="Stay up to date" className='text-neutralWhite' />
                             <input type="email" required className='w-64 h-10 rounded-xl' placeholder='Your Email address' />
                         </div>
-                        {/*  */}
                     </motion.dev>
                 </div>
 

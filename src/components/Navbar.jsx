@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import logo from '../assets/logo.svg';
-import arrow from '../assets/Down.svg';
 import { Link } from 'react-scroll';
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,7 +32,7 @@ const Navbar = () => {
                 <div className='flex justify-between items-center gap-8'>
                     <a href="home"
                         className='text-2xl font-semibold flex space-x-3' >
-                        <img src={logo} alt="Logo" className='w-10 inline-block' />
+                        <img src="/assets/logo.svg" alt="Logo" className='w-10 inline-block' />
                         <span className='text-BrandSecondary'>NEXCENT</span>
                     </a>
 

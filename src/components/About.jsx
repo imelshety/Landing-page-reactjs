@@ -14,7 +14,7 @@ const About = () => {
                         whileInView={"show"}
                         viewport={{ once: false, amount: 0.7 }}
                     >
-                        <img src="/src/assets/about.png" alt="about-image" />
+                        <img src="/assets/about.png" alt="about-image" />
                     </motion.div>
                     <motion.div
                         variants={fadeIn("left", 0.2)}
@@ -50,28 +50,28 @@ const About = () => {
                         className='md:w-1/2'>
                         <div className='grid sm:grid-cols-1 md:grid-cols-2'>
                             <div className='flex space-x-5'>
-                                <img src="/src/assets/Icon-about1.png" alt="about-1" className='w-12 h-12' />
+                                <img src="/assets/Icon-about1.png" alt="about-1" className='w-12 h-12' />
                                 <div>
                                     <h3 className='text-2xl text-NeutralDGrey font-semibold mb-2'>2,245,341</h3>
                                     <p className='text-sm text-neutralGrey mb-4'>Members</p>
                                 </div>
                             </div>
                             <div className='flex space-x-5'>
-                                <img src="/src/assets/Icon-about2.png" alt="about-2" className='w-12 h-12' />
+                                <img src="/assets/Icon-about2.png" alt="about-2" className='w-12 h-12' />
                                 <div>
                                     <h3 className='text-2xl text-NeutralDGrey font-semibold mb-2'>46,328</h3>
                                     <p className='text-sm text-neutralGrey mb-4'>Clubs</p>
                                 </div>
                             </div>
                             <div className='flex space-x-5'>
-                                <img src="/src/assets/Icon-about3.png" alt="about-3" className='w-12 h-12' />
+                                <img src="/assets/Icon-about3.png" alt="about-3" className='w-12 h-12' />
                                 <div>
                                     <h3 className='text-2xl text-NeutralDGrey font-semibold mb-2'>828,867</h3>
                                     <p className='text-sm text-neutralGrey mb-4'>Event Bookings</p>
                                 </div>
                             </div>
                             <div className='flex space-x-5'>
-                                <img src="/src/assets/Icon-about4.png" alt="about-4" className='w-12 h-12' />
+                                <img src="/assets/Icon-about4.png" alt="about-4" className='w-12 h-12' />
                                 <div>
                                     <h3 className='text-2xl text-NeutralDGrey font-semibold mb-2'>1,926,436</h3>
                                     <p className='text-sm text-neutralGrey mb-4'>Payments</p>
