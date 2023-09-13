@@ -5,6 +5,7 @@ import NewsLetter from "./components/NewsLetter"
 import Product from "./components/Product"
 import Serviecs from "./components/Serviecs"
 import Testimonial from "./components/Testimonial"
+import MyFooter from "./components/MyFooter"
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Product />
       <Testimonial />
       <NewsLetter />
+      <MyFooter />
     </>
   )
 }

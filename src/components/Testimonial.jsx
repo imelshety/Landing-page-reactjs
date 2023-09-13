@@ -8,7 +8,7 @@ const Testimonial = () => {
 
     ]
     return (
-        <div className='max-w-screen-2xl mx-auto px-4 lg:px-14 my-12 pb-12'>
+        <div className='max-w-screen-2xl mx-auto px-4 lg:px-14 my-12 pb-12' id='testimonial'>
             <div className='flex flex-col justify-center items-center'>
                 <h2 className='text-NeutralDGrey text-3xl md:text-5xl font-semibold text-center mb-8'>Caring is the new marketing</h2>
                 <p className='text-neutralGrey text-sm text-center leading-8 md:w-1/2'>The Nexcent blog is the best place to read about the latest membership insights, trends and more.

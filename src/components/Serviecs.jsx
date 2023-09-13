@@ -8,7 +8,7 @@ const Serviecs = () => {
 
     ]
     return (
-        <div className='px-4 py-16 md:px-14 w-full mx-auto'>
+        <div className='px-4 py-16 md:px-14 w-full mx-auto' id='services'>
             <div className='text-center my-8'>
                 <h2 className='text-NeutralBlack text-3xl md:text-4xl font-semibold mb-2'>Our Clients</h2>
                 <p className='text-neutralGrey'>We have been working with some Fortune 500+ clients</p>

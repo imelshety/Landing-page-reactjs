@@ -26,7 +26,7 @@ const Navbar = () => {
         { link: "About", path: "about" },
         { link: "Product", path: "product" },
         { link: "Testimonial", path: "testimonial" },
-        { link: "FAQ", path: "faq" }
+        { link: "FAQ", path: "footer" }
     ]
     return (
         <header className='w-full bg-neutralWhite fixed top-0 left-0 right-0'>

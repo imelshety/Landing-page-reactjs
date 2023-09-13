@@ -1,7 +1,7 @@
 import React from 'react'
 const About = () => {
     return (
-        <>
+        <div id='about'>
             <div className='max-w-screen-2xl px-4 lg:px-14 mx-auto my-8 flex flex-col md:flex-row items-center justify-center'>
                 <div className='md:w-11/12 flex flex-col justify-center items-center md:flex-row gap-12'>
                     <div>
@@ -59,7 +59,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
 
     )
 }
